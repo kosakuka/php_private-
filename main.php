@@ -16,7 +16,7 @@ class TextBook extends Book{//TextBookクラス　親クラスBookを継承
 
 $tb = new TextBook();//TextBookクラスを生成
 
-echo $tb->value;//=> 空欄が表示  =====子クラスから親のprivate変数にアクセスしてるのにエラーにならない？？？
+echo $tb->value;//=> 空欄が表示  =====1800という値は出ないものの、子クラスから親のprivate変数にアクセスしてるのにエラーにならない？？？
 
 $tb->value = 2000;
 echo $tb->value;//=> 2000と表示 =====子クラスから親のprivate変数に代入できている？？？？
